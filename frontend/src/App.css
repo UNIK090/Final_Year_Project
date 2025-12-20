@@ -1,34 +1,53 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+.App {
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.gradient-mesh {
+  background: radial-gradient(ellipse at top right, #FBF9F6 0%, #FAFAF9 50%, #FAFAF9 100%);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.App-link {
-    color: #61dafb;
+.hero-pattern {
+  background-image: 
+    radial-gradient(at 40% 20%, rgba(47, 93, 98, 0.05) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(223, 211, 195, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(242, 140, 40, 0.03) 0px, transparent 50%);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F2ED;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2F5D62;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #264A4E;
+}
+
+/* Smooth transitions */
+* {
+  @apply motion-reduce:transition-none;
+}
+
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  transform: translateY(-2px);
 }
