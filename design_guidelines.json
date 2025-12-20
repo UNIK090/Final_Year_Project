@@ -1,0 +1,217 @@
+{
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "mission": "Create a healthcare platform that feels like a wellness sanctuary, not a hospital database.",
+    "principles": [
+      "Fusion over Imitation: Mix medical precision with botanical warmth.",
+      "Emotion First: Every screen must reassure and guide.",
+      "Content is King: Data must be legible, actionable, and human.",
+      "Zoom In: Focus on the patient's immediate needs.",
+      "Negative Space: Let the data breathe."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Public Sans, sans-serif",
+      "editorial": "Playfair Display, serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "installation": "Import via Google Fonts in index.html: <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Public+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap' rel='stylesheet'>",
+    "usage": {
+      "h1": "font-heading font-bold text-4xl md:text-6xl tracking-tight text-primary-900",
+      "h2": "font-heading font-semibold text-3xl md:text-4xl tracking-tight text-primary-800",
+      "h3": "font-heading font-semibold text-2xl text-primary-700",
+      "body": "font-sans text-base leading-relaxed text-slate-600",
+      "caption": "font-sans text-sm text-slate-500 uppercase tracking-wider",
+      "editorial_quote": "font-serif text-2xl italic text-primary-600"
+    }
+  },
+  "colors": {
+    "palette_name": "The Modern Clinic (Organic & Earthy)",
+    "description": "A grounded palette that mixes clinical precision with organic warmth. No generic hospital blues.",
+    "tokens": {
+      "primary": {
+        "DEFAULT": "#2F5D62",
+        "50": "#F2F7F7",
+        "100": "#E1EDED",
+        "200": "#C4DCDC",
+        "300": "#9FBFC0",
+        "400": "#769F9F",
+        "500": "#548282",
+        "600": "#2F5D62",
+        "700": "#264A4E",
+        "800": "#203D40",
+        "900": "#1C3336"
+      },
+      "secondary": {
+        "DEFAULT": "#DFD3C3",
+        "50": "#FBF9F6",
+        "100": "#F6F2ED",
+        "200": "#EBE2D8",
+        "300": "#DFD3C3",
+        "400": "#C7B6A1",
+        "500": "#A8957D",
+        "600": "#85725B",
+        "700": "#635442",
+        "800": "#453B2E",
+        "900": "#2B241C"
+      },
+      "accent": {
+        "DEFAULT": "#F28C28",
+        "description": "Electric Ochre/Coral for high-priority CTAs only."
+      },
+      "neutral": {
+        "background": "#FAFAF9",
+        "surface": "#FFFFFF",
+        "border": "#E7E5E4",
+        "text_main": "#1C1917",
+        "text_muted": "#57534E"
+      },
+      "semantic": {
+        "success": "#059669",
+        "warning": "#D97706",
+        "error": "#DC2626",
+        "info": "#0284C7"
+      }
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "border": "hsl(var(--border))",
+        "input": "hsl(var(--input))",
+        "ring": "hsl(var(--ring))",
+        "background": "hsl(var(--background))",
+        "foreground": "hsl(var(--foreground))",
+        "primary": {
+          "DEFAULT": "hsl(var(--primary))",
+          "foreground": "hsl(var(--primary-foreground))"
+        },
+        "secondary": {
+          "DEFAULT": "hsl(var(--secondary))",
+          "foreground": "hsl(var(--secondary-foreground))"
+        },
+        "destructive": {
+          "DEFAULT": "hsl(var(--destructive))",
+          "foreground": "hsl(var(--destructive-foreground))"
+        },
+        "muted": {
+          "DEFAULT": "hsl(var(--muted))",
+          "foreground": "hsl(var(--muted-foreground))"
+        },
+        "accent": {
+          "DEFAULT": "hsl(var(--accent))",
+          "foreground": "hsl(var(--accent-foreground))"
+        },
+        "popover": {
+          "DEFAULT": "hsl(var(--popover))",
+          "foreground": "hsl(var(--popover-foreground))"
+        },
+        "card": {
+          "DEFAULT": "hsl(var(--card))",
+          "foreground": "hsl(var(--card-foreground))"
+        }
+      },
+      "borderRadius": {
+        "lg": "var(--radius)",
+        "md": "calc(var(--radius) - 2px)",
+        "sm": "calc(var(--radius) - 4px)"
+      }
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "class": "bg-white/80 backdrop-blur-xl border border-white/20 shadow-sm",
+      "usage": "Sticky headers, floating action bars, toast notifications."
+    },
+    "shadows": {
+      "soft": "shadow-[0_4px_20px_-4px_rgba(47,93,98,0.08)]",
+      "hover": "shadow-[0_8px_30px_-4px_rgba(47,93,98,0.12)]"
+    },
+    "gradients": {
+      "subtle_mesh": "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary-100 via-background to-background",
+      "active_border": "bg-gradient-to-r from-primary-500 to-accent-500"
+    }
+  },
+  "layout_strategies": {
+    "dashboard_grid": {
+      "name": "The Control Room",
+      "classes": "grid grid-cols-1 md:grid-cols-12 gap-6 p-6",
+      "usage": "Main dashboard view. Use col-span-12 for KPI strip, col-span-8 for main charts, col-span-4 for lists."
+    },
+    "marketing_grid": {
+      "name": "The Tetris",
+      "classes": "grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 p-8 md:p-12",
+      "usage": "Landing page. Asymmetrical layouts. Leave empty cells for breathing room."
+    },
+    "container": {
+      "default": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary-600 text-white hover:bg-primary-700 shadow-soft hover:shadow-hover rounded-full px-8 py-3 font-medium transition-all duration-300",
+      "secondary": "bg-secondary-100 text-primary-900 hover:bg-secondary-200 rounded-full px-8 py-3 font-medium transition-all duration-300",
+      "outline": "border-2 border-primary-200 text-primary-700 hover:border-primary-600 hover:bg-primary-50 rounded-full px-8 py-3 font-medium transition-all duration-300"
+    },
+    "cards": {
+      "dashboard": "bg-white rounded-2xl border border-slate-100 shadow-soft p-6 hover:border-primary-100 transition-colors duration-300",
+      "feature": "bg-secondary-50/50 rounded-3xl p-8 border border-transparent hover:border-secondary-200 transition-all duration-300"
+    },
+    "inputs": {
+      "default": "bg-white border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-100 rounded-xl px-4 py-3 transition-all duration-200"
+    }
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1659353888477-6e6aab941b55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjQyMTd8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBkb2N0b3IlMjBjb25zdWx0YXRpb24lMjBmcmllbmRseXxlbnwwfHx8fDE3NjYyNTIwODF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Modern doctor using tablet for consultation",
+      "category": "landing_hero"
+    },
+    "nutrition": {
+      "url": "https://images.unsplash.com/photo-1622637012640-83ff490e189f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxoZWFsdGh5JTIwZm9vZCUyMG1lZGl0ZXJyYW5lYW4lMjBkaWV0JTIwZmxhdCUyMGxheXxlbnwwfHx8fDE3NjYyNTIwODJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Fresh mediterranean diet food",
+      "category": "diet_recommendation"
+    },
+    "seniors": {
+      "url": "https://images.unsplash.com/photo-1761839257647-df30867afd54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxzZW5pb3IlMjBjb3VwbGUlMjBoYXBweSUyMGFjdGl2ZSUyMG91dGRvb3JzfGVufDB8fHx8MTc2NjI1MjA4N3ww&ixlib=rb-4.1.0&q=85",
+      "alt": "Happy senior couple outdoors",
+      "category": "patient_success"
+    },
+    "abstract_science": {
+      "url": "https://images.pexels.com/photos/8879106/pexels-photo-8879106.jpeg",
+      "alt": "Abstract DNA and medical science",
+      "category": "background_texture"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-hover",
+    "page_enter": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -20 }
+    }
+  },
+  "accessibility": {
+    "contrast_check": "Ensure all text meets APCA standards. Use text-slate-900 for main text on light backgrounds.",
+    "focus_states": "focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2",
+    "reduced_motion": "motion-reduce:transition-none motion-reduce:transform-none"
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Update tailwind.config.js with the 'Modern Clinic' color palette immediately.",
+    "2. FONTS: Add the Google Fonts link to index.html.",
+    "3. COMPONENTS: Use Shadcn components for complex logic (Forms, Dialogs) but style them using the 'cards.dashboard' and 'inputs.default' classes defined above.",
+    "4. LAYOUT: Implement the 'Control Room' grid for the dashboard. Do not use a single column layout for data.",
+    "5. IMAGES: Use the provided image URLs. Do not use placeholders.",
+    "6. TESTING: Add data-testid to all interactive elements (e.g., data-testid='submit-prediction-btn').",
+    "7. VOICE: For the voice bot, use a subtle pulsing animation (using CSS keyframes) to indicate listening state.",
+    "8. CHARTS: Use Recharts (via Shadcn charts) with the semantic colors defined in the palette."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' designs. No centered text blocks without purpose.",
+    "Use 2-3x more padding than you think is necessary.",
+    "Never use pure black (#000000). Use #1C1917 or #0F172A.",
+    "Always handle loading states with skeletons, not spinners.",
+    "Use 'sonner' for all toast notifications."
+  ]
+}
